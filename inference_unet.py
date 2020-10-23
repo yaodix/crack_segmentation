@@ -113,7 +113,7 @@ if __name__ == '__main__':
 
     paths = [path for path in Path(args.img_dir).glob('*.*')]
     for path in tqdm(paths):
-        #print(str(path))
+        print(str(path))
 
         train_tfms = transforms.Compose([transforms.ToTensor(), transforms.Normalize(channel_means, channel_stds)])
 
